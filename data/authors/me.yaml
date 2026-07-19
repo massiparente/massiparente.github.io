@@ -1,0 +1,102 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Dr. Max Parente
+  given: Massimiliano
+  family: Parente
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+postnominals:
+  - PhD
+status:
+  icon: ""
+role: Postdoctoral Researcher in Astrophysics
+bio: |
+  I am a theoretical astrophysicist studying how galaxies form and evolve with computer simulations, and what we can learn from the observations of the most powerful telescopes.
+
+affiliations:
+  - name: University of Florida
+    url: https://www.astro.ufl.edu/
+
+links:
+  - icon: at-symbol
+    url: mailto:parente.m@ufl.edu
+    label: E-mail Me
+  - icon: academicons/ads
+    url: https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-9729-3721&sort=date%20desc%2C%20bibcode%20desc&p_=0
+    label: NASA ADS
+
+interests:
+  - Galaxy Formation and Evolution
+  - PAHs Evolution and Emission
+  - Dust Formation and Evolution
+  - Interstellar Medium
+  - Cosmological Simulations
+  - Far-Infrared Emission of Galaxies
+  - Large Scale Structure
+
+education:
+  - degree: PhD in Astrophysics and Cosmology
+    institution: SISSA, Trieste (IT)
+    summary: Summa cum laude
+  - degree: MSc in Theoretical Physics
+    institution: Sapienza, Università di Roma (IT)
+    summary: Summa cum laude
+  - degree: BSc in Physics
+    institution: Sapienza, Università di Roma (IT)
+    summary: Summa cum laude
+
+experience:
+  - role: Postdoctoral Researcher
+    org: University of Florida, Gainesville (USA)
+    start: 2025-01-01
+    summary: Dust and PAHs in galaxy evolution simulations
+  - role: Postdoctoral Researcher
+    org: INAF, Trieste (IT)
+    start: 2024-01-01
+    end: 2025-01-01
+    summary: Sub-mm emission lines in high-z simulated galaxies
+
+skills:
+  - name: Programming & Software
+    items:
+      - label: Python
+        level: 5
+      - label: C / C++
+        level: 4
+      - label: IDL
+        level: 4
+      - label: LaTeX
+        level: 5
+      - label: Unix/Linux/MacOS
+        level: 5
+
+languages:
+  - name: Italian
+    level: 5
+    label: Mother Tongue
+  - name: English
+    level: 5
+    label: Fluent
+  - name: Spanish
+    level: 2
+    label: Basic
+
+awards:
+  - title: Premio Tacchini — Best PhD Thesis in Astrophysics in Italy
+    awarder: Italian Astronomical Society
+    date: "2025-01-01"
+    summary: Awarded for the best PhD thesis in astrophysics defended in Italy.
+    icon: hero/trophy
+  - title: Outstanding Graduate Award 2019/2020
+    awarder: Sapienza Università di Roma & Fondazione Roma Sapienza
+    date: "2021-01-01"
+    summary: ''
+    icon: hero/academic-cap
+  - title: INFN Prize for Best Students in Nuclear Physics
+    awarder: INFN
+    date: "2018-01-01"
+    summary: Visit at CERN laboratories.
+    icon: hero/star

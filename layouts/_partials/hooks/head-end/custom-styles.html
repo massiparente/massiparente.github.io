@@ -1,0 +1,128 @@
+<!-- Google Fonts: Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── Modern sans-serif font override ── */
+body, html, p, li, td, th, blockquote, figcaption,
+.prose, [class*="text-"] {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6,
+.font-heading, [class*="font-bold"], [class*="font-semibold"] {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: -0.01em;
+}
+
+/* Hide the "Professional Summary" icon + heading above the bio text */
+div:has(> div > .bio-text) > div:first-child { display: none !important; }
+
+/* Hide date, tags, and metadata footer on research/project pages */
+.page-footer, .article-footer,
+div:has(> time), div:has(> .tag),
+a[href*="/tags/"] { display: none !important; }
+
+/* Hide placeholder image in news cards when no real image exists */
+#news .aspect-\[16\/9\] { display: none !important; }
+
+/* Bullet list style for citation view */
+#papers .space-y-6 > div,
+#papers .divide-y > div {
+  position: relative;
+  padding-left: 1.25rem;
+}
+#papers .space-y-6 > div::before,
+#papers .divide-y > div::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 1.1em;
+  opacity: 0.5;
+}
+
+/* Talks section: wider than default prose but not full width */
+#talks .prose,
+#talks [class*="prose"],
+#talks .markdown {
+  max-width: 85% !important;
+}
+
+/* Hide social link blocks on non-homepage pages (author cards in content pages) */
+body:not(.page-home) .social-links,
+body:not(.page-home) ul.social-links {
+  display: none !important;
+}
+
+/* NASA ADS button */
+.ads-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.1rem;
+  border: 2px solid currentColor;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none !important;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.ads-btn:hover { opacity: 1; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Map local publication URLs → NASA ADS URLs
+  const adsMap = {
+    '/publications/dust-temperature-2026/': 'https://ui.adsabs.harvard.edu/abs/2026arXiv260304505P/abstract',
+    '/publications/grain-size-2026/':       'https://ui.adsabs.harvard.edu/abs/2026arXiv260406314P/abstract',
+    '/publications/oi-emission-2026/':      'https://ui.adsabs.harvard.edu/abs/2026A%26A...705A..39P/abstract',
+    '/publications/dust-review-2025/':      'https://ui.adsabs.harvard.edu/abs/2025arXiv250410585P/abstract',
+    '/publications/green-valley-2025/':     'https://ui.adsabs.harvard.edu/abs/2025A%26A...697..231P/abstract',
+    '/publications/cosmic-web-2024/':       'https://ui.adsabs.harvard.edu/abs/2024ApJ...966...17P/abstract',
+    '/publications/dust-drop-2023/':        'https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.6105P/abstract',
+    '/publications/muppi-2022/':            'https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.2053P/abstract',
+  };
+
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    try {
+      const path = new URL(a.href, window.location.origin).pathname.replace(/\/$/, '') + '/';
+      if (adsMap[path]) {
+        a.href = adsMap[path];
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    } catch (e) {}
+  });
+
+  // Bold and reformat author name in the papers section
+  // HugoBlox resolves `me` to the display name "Max Parente"; we bold it as "Parente, M."
+  const papersEl = document.getElementById('papers');
+  if (papersEl) {
+    const walker = document.createTreeWalker(papersEl, NodeFilter.SHOW_TEXT, null, false);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      if (/Parente/.test(node.textContent)) {
+        const span = document.createElement('span');
+        span.innerHTML = node.textContent
+          // Match "Max Parente" (HugoBlox display name) → bold "Parente, M."
+          .replace(/\b(?:Dr\.\s+)?Max\s+Parente\b/g, '<strong>Parente, M.</strong>')
+          // Also match any remaining "Parente, M." / "Parente M." variants
+          .replace(/\bParente(,?\s*M\.?)/g, '<strong>Parente$1</strong>');
+        node.parentNode.replaceChild(span, node);
+      }
+    });
+  }
+
+  // Hide "See all publications" auto-generated link
+  document.querySelectorAll('a[href*="/publications/"]').forEach(function (a) {
+    if (a.textContent.trim().toLowerCase().includes('see all') ||
+        a.textContent.trim().toLowerCase().includes('view all') ||
+        a.textContent.trim().toLowerCase().includes('more publications')) {
+      const parent = a.closest('div, p');
+      if (parent) parent.style.display = 'none';
+    }
+  });
+});
+</script>
