@@ -17,7 +17,9 @@ publishDate: "2026-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 publication:
   name: "Astronomy & Astrophysics, 705, A39"
-doi: "10.1051/0004-6361/202557033"
+hugoblox:
+  ids:
+    doi: "10.1051/0004-6361/202557033"
 peer_reviewed: true
 open_access: true
 abstract: >
