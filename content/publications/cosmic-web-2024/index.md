@@ -17,9 +17,6 @@ publishDate: "2024-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 publication:
   name: "The Astrophysical Journal, 966, 17"
-hugoblox:
-  ids:
-    doi: "10.3847/1538-4357/ad320e"
 peer_reviewed: true
 open_access: true
 abstract: >

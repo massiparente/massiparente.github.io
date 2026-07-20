@@ -14,9 +14,6 @@ publishDate: "2022-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 publication:
   name: "Monthly Notices of the Royal Astronomical Society, 515, 2053"
-hugoblox:
-  ids:
-    doi: "10.1093/mnras/stac1913"
 peer_reviewed: true
 open_access: true
 abstract: >

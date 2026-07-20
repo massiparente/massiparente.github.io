@@ -14,9 +14,6 @@ publishDate: "2025-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 publication:
   name: "Astronomy & Astrophysics, 697, 231"
-hugoblox:
-  ids:
-    doi: "10.1051/0004-6361/202452320"
 peer_reviewed: true
 open_access: true
 abstract: >
