@@ -25,7 +25,7 @@ tags:
   - Dust
   - Galaxy Evolution
 featured: true
-links: []
+
 image:
   focal_point: Smart
   preview_only: false

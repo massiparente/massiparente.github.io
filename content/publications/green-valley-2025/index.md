@@ -28,7 +28,6 @@ tags:
   - Galaxy Evolution
   - Green Valley
 featured: true
-links: []
 image:
   focal_point: Smart
   preview_only: false

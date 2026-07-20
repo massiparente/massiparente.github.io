@@ -24,7 +24,7 @@ tags:
   - Dust
   - Grain Size
 featured: true
-links: []
+
 image:
   focal_point: Smart
   preview_only: false

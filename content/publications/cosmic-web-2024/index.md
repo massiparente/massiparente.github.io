@@ -31,7 +31,6 @@ tags:
   - Dust
   - Star Formation
 featured: true
-links: []
 image:
   focal_point: Smart
   preview_only: false

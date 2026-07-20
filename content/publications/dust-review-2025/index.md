@@ -22,7 +22,7 @@ tags:
   - Dust
   - Review
 featured: true
-links: []
+
 image:
   focal_point: Smart
   preview_only: false

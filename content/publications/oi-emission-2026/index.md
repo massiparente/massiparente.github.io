@@ -31,7 +31,6 @@ tags:
   - ISM
   - High-z Galaxies
 featured: true
-links: []
 image:
   focal_point: Smart
   preview_only: false
