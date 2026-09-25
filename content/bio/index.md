@@ -13,10 +13,10 @@ Among other things, I enjoy the sea, playing and singing (with very poor results
 
 <div style="overflow-x: auto; display: flex; gap: 12px; padding: 16px 0; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
   <img src="lecce.jpeg"    style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
+  <img src="monument.jpeg" style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
   <img src="telescope.jpeg" style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
   <img src="viaggio.jpeg"  style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
   <img src="niagara.jpeg"  style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
   <img src="corsa.jpeg"    style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
   <img src="swa.jpeg"      style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
-  <img src="monument.jpeg" style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
 </div>
