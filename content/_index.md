@@ -84,6 +84,7 @@ sections:
 
 
         **2026**
+        - Cake Talk, DAWN — Copenhagen
         - Exploring the Aromatic Universe in the JWST era — London, Canada
         - Lunch Talk, ESO - Garching, Germany
         - Invited Seminar - University of Gent, Belgium

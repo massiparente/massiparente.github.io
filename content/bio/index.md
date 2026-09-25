@@ -18,4 +18,5 @@ Among other things, I enjoy the sea, playing and singing (with very poor results
   <img src="niagara.jpeg"  style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
   <img src="corsa.jpeg"    style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
   <img src="swa.jpeg"      style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
+  <img src="monument.jpeg" style="height: 220px; width: auto; flex-shrink: 0; border-radius: 10px; scroll-snap-align: start; object-fit: cover;">
 </div>
